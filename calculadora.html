@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<style>
+     body{
+
+     }
+	 form{
+          width:500px;
+          height: 600px;
+          background: orange;
+          margin:auto;
+          float:left;
+	 }
+	 input[type="button"]{
+                width: 124px;
+                height: 99px;
+                
+                margin-bottom: 1px ;
+                margin-left: 1px;
+                padding-bottom: 1px;
+                position: relative;
+                float: right;
+                font-size: 20px;
+
+	 }
+	  input[type="text"]{
+                border:0px;
+                width: 500px;
+                height: 50px;
+                background:gray;
+
+
+
+	 }
+
+	 #botones{
+	 	width: 100%;
+	 	height:500px;
+	 	background: blue; 
+	 	
+        
+
+	 }
+	 #nulo{
+	 	border:blue;
+	 	background: blue;
+	 }
+	 
+  
+	</style>
+	<script  src="js/script.js"></script>
+</head>
+<body>
+	<form action="">
+		<input type="text" id="entrada">
+		<input type="text" id="salida">
+		<div id="botones">
+		<input type="button" value="/" onclick="operdiv(this.value)" id="operacion1">
+		<input type="button" value="X2" onclick="opercuadrado()">
+		<input type="button" value="C" onclick="operlimp(this.value)">
+		<input type="button" value="CE" onclick="operlimpall()">
+
+		<input type="button" value="x" onclick="operpor(this.value)" id="operacion2" >
+		<input type="button" value="9" onclick="impr(this.value)">
+		<input type="button" value="8" onclick="impr(this.value)">
+		<input type="button" value="7" onclick="impr(this.value)">
+
+		<input type="button" value ="-" onclick="opermenos(this.value)" id="operacion3">
+		<input type="button" value="6" onclick="impr(this.value)">
+		<input type="button" value="5" onclick="impr(this.value)">
+		<input type="button" value="4" onclick="impr(this.value)">
+
+		<input type="button" value="+" onclick="opermas(this.value)" id="operacion4">
+		<input type="button" value="3" onclick="impr(this.value)">
+		<input type="button" value="2" onclick="impr(this.value)">
+		<input type="button" value="1" onclick="impr(this.value)">
+
+		<input type="button" value="=" onclick="operigual(this.value)" >
+		<input type="button" value="." onclick="impr(this.value)">
+		<input type="button" value="0" onclick="impr(this.value)">
+		<input type="button" value="" id="nulo">
+		</div>
+
+	</form>
+	
+</body>
+</html>
